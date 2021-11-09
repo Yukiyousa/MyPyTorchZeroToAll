@@ -39,7 +39,7 @@ for epoch in range(500):
     loss = criterion(y_pred, y_data)
     print(f'Epoch: {epoch} | Loss: {loss.item()} ')
 
-    # Zero gradients, perform a backward pass, and update the weights.
+    # 3）Zero gradients, perform a backward pass, and update the weights.
     optimizer.zero_grad()
     loss.backward()
     optimizer.step()
