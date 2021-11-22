@@ -7,7 +7,7 @@ import glob
 import os
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
-# 数据准备
+# 数据集合准备
 (train_images, train_labels), (_, _) = tf.keras.datasets.mnist.load_data()
 train_images = train_images.reshape(train_images.shape[0], 28, 28, 1).astype('float32')
 (train_images - 127.5) / 127.5
